@@ -5,8 +5,9 @@
 
 &.dark {
   background: #333;
+  color: #FFF;
 }
-
+  
   aside {
     flex: 7;
 
@@ -55,7 +56,23 @@
     align-items: stretch;
     text-align: center;
 
+    .escolhe-tema {
+    height: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: #a8a8b3;
+    color: rgb(119, 53, 116);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 10;
+    }
+    
     > img {
+      margin-top: 20px;
       align-self: center;
     }
 

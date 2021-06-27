@@ -29,7 +29,7 @@ export function ThemeContextProvider(props: ThemeContextProviderProps) {
     }
 
     return (
-        <ThemeContext.Provider value={{ theme: currentTheme, toogleTheme }}>
+        <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>
             {props.children}
         </ThemeContext.Provider>
     )

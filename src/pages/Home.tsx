@@ -18,7 +18,7 @@ export function Home() {
   const { user, signInWithGoogle } = useAuth()
   const [roomCode, setRoomCode] = useState('');
 
-  const { theme, toogleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   async function handleCreateRoom() {
     if (!user) {
@@ -60,7 +60,7 @@ export function Home() {
       <main>
         <div className="main-content">
           <h1>{theme}</h1>
-          <button onClick={toogleTheme}>Toggle</button>
+          <button onClick={toggleTheme} className="escolhe-tema">Alterar tema</button>
 
           <img src={logoImg} alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-room">
